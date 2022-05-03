@@ -1,0 +1,2 @@
+Fuente sobre porque no cargan imágenes en react. No es una solución dinámica pero funciona para este proyecto.
+https://daveceddia.com/react-image-tag/
