@@ -1,0 +1,17 @@
+.descriptionContainer{
+  padding-top: 2.75rem;
+  padding-right: 1.3125rem;
+}
+.manufacturer{
+  color:var(--main-color);
+  text-transform: uppercase;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.description{
+  line-height: 1.6;
+  color: var(--secondary-color)
+}

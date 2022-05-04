@@ -1,0 +1,6 @@
+.landingItem{
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7.125rem;
+}

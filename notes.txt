@@ -1,2 +1,5 @@
 Fuente sobre porque no cargan imágenes en react. No es una solución dinámica pero funciona para este proyecto.
 https://daveceddia.com/react-image-tag/
+
+Cambiar a blanco y no morir en el intento
+https://stackoverflow.com/questions/52829623/how-to-make-a-color-white-using-filter-property-in-css#52829710

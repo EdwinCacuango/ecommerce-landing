@@ -1,0 +1,29 @@
+.mainImage{
+  max-width: 28.125rem;
+margin-bottom: 2rem;
+}
+
+.mainImage img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.lowerCarrousel{
+  display: flex;
+  gap:1.90rem;
+}
+
+.itemCarrousel{
+  max-width: 5.625rem;
+  max-height: 5.625rem;
+  padding: 0;
+  border:none;
+}
+
+.itemCarrousel img{
+  max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Pendiente estilos para active effect */

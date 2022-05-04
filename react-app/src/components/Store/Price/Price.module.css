@@ -1,0 +1,28 @@
+.actualPrice{
+  display: flex;
+  gap:1rem;
+  margin:0;
+  font-weight: 700;
+}
+
+.finalPrice{
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0;
+}
+
+.percentage{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding:0.5rem;
+  background-color: var(--bg-orange);
+  border-radius: 5px;
+  text-align: center;
+  color:var(--main-color);
+}
+
+.price{
+  margin-top: 0;
+  color:hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
