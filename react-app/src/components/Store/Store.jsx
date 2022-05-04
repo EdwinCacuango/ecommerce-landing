@@ -30,8 +30,8 @@ const Store = () => {
       },
       {
         id:4,
-        medium:"./image-products/image-product-4-thumbnail.jpg",
-        large: "./image-products/image-product-4.jpg",
+        medium:".image-product-4-thumbnail.jpg",
+        large: "./image-product-4.jpg",
       }
     ]
   }]
