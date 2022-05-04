@@ -15,23 +15,23 @@ const Store = () => {
     images: [
       {
         id:1,
-        medium:"./Image-products/image-product-1-thumbnail.jpg",
-        large: "./Image-products/image-product-1.jpg",
+        medium:"./image-products/image-product-1-thumbnail.jpg",
+        large: "./image-products/image-product-1.jpg",
       },
       {
         id:2,
-        medium:"./Image-products/image-product-2-thumbnail.jpg",
-        large: "./Image-products/image-product-2.jpg",
+        medium:"./image-products/image-product-2-thumbnail.jpg",
+        large: "./image-products/image-product-2.jpg",
       },
       {
         id:3,
-        medium:"./Image-products/image-product-3-thumbnail.jpg",
-        large: "./Image-products/image-product-3.jpg",
+        medium:"./image-products/image-product-3-thumbnail.jpg",
+        large: "./image-products/image-product-3.jpg",
       },
       {
         id:4,
-        medium:"./Image-products/image-product-4-thumbnail.jpg",
-        large: "./Image-products/image-product-4.jpg",
+        medium:"./image-products/image-product-4-thumbnail.jpg",
+        large: "./image-products/image-product-4.jpg",
       }
     ]
   }]
