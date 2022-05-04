@@ -1,42 +1,11 @@
+import {itemInformation} from "../data/itemInformation"
 import AddToCart from "./AddToCart/AddToCart"
 import Carrousel from "./Carrousel/Carrousel"
 import ItemDescription from "./ItemDescription/ItemDescription"
 import Price from "./Price/Price"
 import styles from "./Store.module.css"
+
 const Store = () => {
-
-  //Para las imágenes del producto, insertar un array de objetos, cada objeto con las rutas de la ilustración
-  const itemInformation = [{
-    id: 1,
-    title: "Fall Limited Edition Sneakers",
-    description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
-    manufacturer: "Sneaker Company",
-    price: 250,
-    images: [
-      {
-        id:1,
-        medium:"./image-products/image-product-1-thumbnail.jpg",
-        large: "./image-products/image-product-1.jpg",
-      },
-      {
-        id:2,
-        medium:"./image-products/image-product-2-thumbnail.jpg",
-        large: "./image-products/image-product-2.jpg",
-      },
-      {
-        id:3,
-        medium:"./image-products/image-product-3-thumbnail.jpg",
-        large: "./image-products/image-product-3.jpg",
-      },
-      {
-        id:4,
-        medium:"./image-products/image-product-4-thumbnail.jpg",
-        large: "./image-products/image-product-4.jpg",
-      }
-    ]
-  }]
-
-
   return (
     <div className={styles.landingItem}>
       <Carrousel imagesGalery={itemInformation[0].images}/>
