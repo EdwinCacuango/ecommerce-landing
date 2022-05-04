@@ -9,7 +9,7 @@ import ImgL4 from "./image-products/image-product-4.jpg"
 
 
 //Para las imágenes del producto, insertar un array de objetos, cada objeto con las rutas de la ilustración
-export const itemInformation = ()=>{
+const itemInformation = ()=>{
   return ([{
   id: 1,
   title: "Fall Limited Edition Sneakers",
@@ -41,3 +41,5 @@ export const itemInformation = ()=>{
 }]
 )
 }
+
+export default itemInformation

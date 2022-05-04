@@ -1,4 +1,4 @@
-import {itemInformation} from "../data/itemInformation"
+import itemInformation from "../../data/intemInformation"
 import AddToCart from "./AddToCart/AddToCart"
 import Carrousel from "./Carrousel/Carrousel"
 import ItemDescription from "./ItemDescription/ItemDescription"
