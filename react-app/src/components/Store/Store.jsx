@@ -6,10 +6,10 @@ import Price from "./Price/Price"
 import styles from "./Store.module.css"
 
 const Store = () => {
-  const itemList=itemInformation
+  const itemList = itemInformation
   return (
     <div className={styles.landingItem}>
-      <Carrousel imagesGalery={itemList[0].images}/>
+      <Carrousel imagesGalery={itemList[0].images} />
       <div>
         <ItemDescription key={itemList[0].id}
           title={itemList[0].title}
