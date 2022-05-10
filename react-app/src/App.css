@@ -4,16 +4,21 @@
   --secondary-color:hsl(219, 9%, 45%);
   --bg-orange:hsl(25, 100%, 94%);
   --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
 }
 
 body{
   box-sizing: border-box;
+  color:hsl(219, 9%, 45%);
 }
-
+button:hover, a:hover{
+  cursor: pointer;
+}
 
 /*En adelante estilos del componente*/
 .App{
    margin: 0 5%;
    font-size: 1rem;
    font-family: 'Kumbh Sans', sans-serif;
+   font-weight: 400;
 }

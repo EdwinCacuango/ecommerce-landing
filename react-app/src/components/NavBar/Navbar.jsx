@@ -1,5 +1,44 @@
-const NavBar=()=>{
-  return (<h2>Navlink</h2>)
+import { useState } from "react"
+import CartMenu from "../Cart/CartMenu"
+import logo from "./icons/logo.svg"
+import cartLogo from "./icons/icon-cart.svg"
+import imageProfile from "./icons/image-avatar.png"
+import styles from "./Navbar.module.css"
+
+const NavBar = () => {
+  const [activeCart, setActiveCart] = useState(false)
+  const cartBtnHandler = () => {
+    setActiveCart((prev) => !prev)
+  }
+  return (<header className={styles.header}>
+    <nav className={styles.nav}>
+      <ul>
+        <li><a href="/"><img src={logo} alt="Sneakers logo" /></a></li>
+        <li>
+          <ul className={styles.ancorList}>
+            <li className={styles.itemNav}><a>Collections</a></li>
+            <li className={styles.itemNav}><a>Men</a></li>
+            <li className={styles.itemNav}><a>Women</a></li>
+            <li className={styles.itemNav}><a>About</a></li>
+            <li className={styles.itemNav}><a>Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div className={styles.cart}>
+      <button onClick={cartBtnHandler} className={styles.cartIcon}>
+        <img src={cartLogo} />
+        <span>0</span>
+      </button>
+      <button className={styles.imgProfile}>
+        <img src={imageProfile} alt="" />
+      </button>
+      {
+          activeCart&& <CartMenu></CartMenu>
+      }
+    </div>
+
+  </header>)
 }
 
 export default NavBar
