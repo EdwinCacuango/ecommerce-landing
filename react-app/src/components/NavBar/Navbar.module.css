@@ -44,16 +44,18 @@
 }
 .cartIcon{
   background:none;
-  padding:0;
+  padding:0.5rem 0.35rem;
   border:none;
-  display:absolute;
+  position: relative;
 }
 
 .cartIcon span{
-  display:relative;
+  position:absolute;
   top:0;
+  right:0;
+  width: 1rem;
+  height: 1rem;
   border-radius:50%;
-  padding:0.25rem;
   background:var(--main-color);
   color:white;
 }

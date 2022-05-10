@@ -31,7 +31,7 @@ const NavBar = () => {
         <span>0</span>
       </button>
       <button className={styles.imgProfile}>
-        <img src={imageProfile} alt="" />
+        <img src={imageProfile} alt="Image profile" />
       </button>
       {
           activeCart&& <CartMenu></CartMenu>
