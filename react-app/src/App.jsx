@@ -1,14 +1,15 @@
 import NavBar from "./components/NavBar/Navbar"
 import Store from "./components/Store/Store"
 import './App.css'
+import { CartProvider } from "./services/cartContex"
 
 function App() {
 
   return (
-    <div className="App">
+    <CartProvider className="App">
       <NavBar />
       <Store />
-    </div>
+    </CartProvider>
   )
 }
 

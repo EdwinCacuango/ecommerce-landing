@@ -1,4 +1,5 @@
-import itemInformation from "../../data/intemInformation"
+import { useContext } from "react"
+import { cartContext } from "../../services/cartContex"
 import AddToCart from "./AddToCart/AddToCart"
 import Carrousel from "./Carrousel/Carrousel"
 import ItemDescription from "./ItemDescription/ItemDescription"
@@ -6,20 +7,24 @@ import Price from "./Price/Price"
 import styles from "./Store.module.css"
 
 const Store = () => {
-  const itemList = itemInformation
+  const {products}=useContext(cartContext)
   return (
-    <div className={styles.landingItem}>
-      <Carrousel imagesGalery={itemList[0].images} />
-      <div>
-        <ItemDescription key={itemList[0].id}
-          title={itemList[0].title}
-          description={itemList[0].description}
-          manufacturer={itemList[0].manufacturer} />
-        <Price price={itemList[0].price} percentage="50" />
-        <AddToCart></AddToCart>
-      </div>
-    </div>
-
+    <>
+      {
+        products.map((product, index)=>{
+        return <div key={index} className={styles.landingItem}>
+          <Carrousel imagesGalery={product.images} />
+          <div>
+            <ItemDescription
+              title={product.title}
+              description={product.description}
+              manufacturer={product.manufacturer} />
+            <Price price={product.price} percentage="50" />
+            <AddToCart item={product}/>
+          </div>
+        </div>})
+      }
+    </>   
   )
 }
 
