@@ -1,0 +1,38 @@
+.cart {
+  max-width: 22.5rem;
+  z-index:5;
+  border:1px solid;
+}
+.cart h3,
+.container {
+  padding: 1.5rem;
+}
+.cart h3{
+    margin:0;
+    border-bottom: 1px solid;
+}
+button {
+  width: 100%;
+}
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.information .imgContainer {
+  width: 3.0625rem;
+}
+
+.information .imgContainer img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.description {
+  padding: 1rem 0;
+}
+.description p:first-child,
+.description p:last-child {
+  margin: 0;
+}

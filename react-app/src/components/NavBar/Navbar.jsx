@@ -31,6 +31,7 @@ const NavBar = () => {
             <li className={styles.itemNav}><a>Men</a></li>
             <li className={styles.itemNav}><a>Women</a></li>
             <li className={styles.itemNav}><a>About</a></li>
+            <li className={styles.itemNav}><a>Contact</a></li>
           </ul>
         </li>
       </ul>
@@ -43,10 +44,11 @@ const NavBar = () => {
       <button className={styles.imgProfile}>
         <img src={imageProfile} alt="Image profile" />
       </button>
-      {
-        activeCart && <CartMenu></CartMenu>
-      }
+      
     </div>
+    {
+        activeCart && <CartMenu></CartMenu>
+    }
 
   </header>)
 }
