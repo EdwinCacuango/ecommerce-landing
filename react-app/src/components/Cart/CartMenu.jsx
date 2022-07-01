@@ -33,7 +33,7 @@ const Cart = () => {
               <button onClick={()=>{deleteHandler(item.product.id)}}><img src={deleteLogo} /></button>
             </div>
           </div>
-          <button className={styles}>Checkout</button>
+          <button className={styles.checkout}>Checkout</button>
         </div>
       )
     }

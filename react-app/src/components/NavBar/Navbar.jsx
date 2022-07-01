@@ -6,20 +6,21 @@ import cartLogo from "./icons/icon-cart.svg"
 import imageProfile from "./icons/image-avatar.png"
 import styles from "./Navbar.module.css"
 
-const NavBar = () => {
+const NavBar = ({activeCart}) => {
   const { cart } = useContext(cartContext)
-  const [activeCart, setActiveCart] = useState(false)
+  const {setActiveCart} = activeCart
   const cartBtnHandler = () => {
     setActiveCart(prev => !prev)
   }
 
   let totalProducts = 0
-  //Array with only number of products in cart
-  const numberProducts = cart.map(item => {
-    return item.numberAdded
-  })
-  totalProducts=numberProducts[0]
-  
+  //Counter number of products on cart
+  if (cart.length > 0) {
+    const numberProducts = cart.map(item => {
+      return item.numberAdded
+    })
+    totalProducts = numberProducts[0]
+  }
 
   return (<header className={styles.header}>
     <nav className={styles.nav}>
@@ -44,12 +45,7 @@ const NavBar = () => {
       <button className={styles.imgProfile}>
         <img src={imageProfile} alt="Image profile" />
       </button>
-      
     </div>
-    {
-        activeCart && <CartMenu></CartMenu>
-    }
-
   </header>)
 }
 

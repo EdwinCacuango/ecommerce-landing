@@ -13,7 +13,7 @@
 }
 
 .nav ul{
-  width: 100%;
+  /* width: 100%; */
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -37,25 +37,29 @@
 }
 
 .cart{
-    width:7.4375rem;
+    margin-right:2.5rem;
+    width:12rem;
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
+    gap:1rem;
 }
 .cartIcon{
+  width:50%;
   background:none;
-  padding:0.5rem 0.35rem;
-  border:none;
-  position: relative;
+  border: none;
+  padding:0.5rem 0.5rem;
+  position:relative;
 }
 
 .cartIcon span{
   position:absolute;
   top:0;
-  right:0;
+  left:60%;
   width: 1rem;
   height: 1rem;
   border-radius:50%;
+  padding: 0.15rem;
   background:var(--main-color);
   color:white;
 }
@@ -72,5 +76,5 @@
   border: 2px solid var(--main-color);
 }
 .imgProfile img{
-    max-width:100%;
+    width:100%;
 }

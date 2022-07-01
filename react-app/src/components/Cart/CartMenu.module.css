@@ -1,6 +1,9 @@
 .cart {
+  position:absolute;
+  top:-5.6rem;
+  right:0;
   max-width: 22.5rem;
-  z-index:5;
+  z-index:20;
   border:1px solid;
 }
 .cart h3,
@@ -13,6 +16,8 @@
 }
 button {
   width: 100%;
+  background:transparent;
+  border:none;
 }
 .information {
   display: flex;
@@ -35,4 +40,9 @@ button {
 .description p:first-child,
 .description p:last-child {
   margin: 0;
+}
+.checkout{
+  padding:0.5rem;
+  background-color:hsl(223, 64%, 98%);
+  border-radius:15px;
 }

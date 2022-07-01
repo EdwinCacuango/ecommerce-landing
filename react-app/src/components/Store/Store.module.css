@@ -1,6 +1,12 @@
+.main{
+  position:relative;
+  width:100%;
+  margi: 0 3rem;
+}
 .landingItem{
+  width:100%;
   margin: 0 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 7.125rem;
+  grid-gap: 3.125rem;
 }
