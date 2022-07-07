@@ -6,7 +6,7 @@ import styles from "./CartMenu.module.css"
 
 const Cart = () => {
   const { cart, setCart } = useContext(cartContext)
-  let content = (<p>Your cart is empty</p>)
+  let content = (<p className={styles.empty}>Your cart is empty</p>)
   const deleteHandler=(id)=>{
     const itemForDelete=cart.filter(element=>element.product.id!==id)
     setCart(itemForDelete)
@@ -27,7 +27,7 @@ const Cart = () => {
             </div>
             <div className={styles.description}>
               <p>{item.product.title}</p>
-              <p>${actualPrice.toFixed(2)} x {item.numberAdded} <strong>${totalPrice}</strong></p>
+              <p>${actualPrice.toFixed(2)} x {item.numberAdded} <span>${totalPrice}</span></p>
             </div>
             <div>
               <button onClick={()=>{deleteHandler(item.product.id)}}><img src={deleteLogo} /></button>
